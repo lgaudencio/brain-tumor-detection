@@ -6,7 +6,6 @@ from datetime import datetime
 import joblib
 
 
-
 def download_dataframe_as_csv(df):
 
     datetime_now = datetime.now().strftime("%d%b%Y_%Hh%Mmin%Ss")
