@@ -63,4 +63,35 @@ def page_ml_performance_metrics():
         f"later epochs we can observe even more overfitting."
     )
 
+    confusion_matrix = plt.imread(f"")
+    st.image(
+        confusion_matrix, 
+        caption='Confusion Matrix'
+    )
+
+    st.warning(
+        f"**Confusion Matrix**"
+        f"A confusion matrix summerises the performance of a machine learning "
+        f"model on a set of test data. It is a way of displaying the number "
+        f"of accurate and inaccurate instances based on the predictions of "
+        f"the model. Also, it measures the performance of classification "
+        f"models, which aims to predict a categorical label for each input.\n\n"
+        f"A confusion matrix displays the number of instances produced by "
+        f"the model on the test data it is given.\n\n"
+        f"* True Positives (TP): This occurs when the model accurately "
+        f"predicts a positive data point.\n"
+        f"* True Negatives (TN): This occurs when the model accurately "
+        f"predicts a negative data point.\n"
+        f"* False Positives (FP): This occurs when the model predicts a "
+        f"positive data point incorrectly.\n"
+        f"* False Negatives (FN): This occurs when the model mispredicts a "
+        f"negative data point.\n\n"
+        f"A confusion matrix is essential when it comes to assessing a "
+        f"classification model's performance. It gives a thorough analysis "
+        f"of true positive, true negative, false positive and false negative "
+        f"predictions, thereby facilitating a comprehension of a model's "
+        f"recall, accuracy, precision and overall effectiveness in class "
+        f"distinction."
+    )
+
     st.write("---")
