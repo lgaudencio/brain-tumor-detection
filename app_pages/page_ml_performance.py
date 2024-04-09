@@ -43,3 +43,24 @@ def page_ml_performance_metrics():
     )
 
     st.write("---")
+
+    st.write("### Model History")
+
+    col1, col2 = st.beta_columns(2)
+    with col1: 
+        model_accuracy = plt.imread(f"")
+        st.image(model_accuracy, caption='Training Accuracy of the Model')
+    with col2:
+        model_loss = plt.imread(f"")
+        st.image(model_loss, caption='Training Loss of the Model')
+
+    st.warning(
+        f"**Training Accuracy/Loss of the Model**\n\n"
+        f"The graphs showing the training accuracy and loss of the model "
+        f"were obtained by using SoftMax as the activation function on our "
+        f"model. It can be observed that in both accuracy and loss graphs "
+        f"that there is slight overfitting in the initial epochs and in "
+        f"later epochs we can observe even more overfitting."
+    )
+
+    st.write("---")
