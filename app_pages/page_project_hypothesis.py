@@ -32,3 +32,34 @@ def page_project_hypothesis_body():
         f"training dataset, but by the general patterns from features to "
         f"labels."
     )
+
+
+    st.write("Hypothesis 2 and Validation")
+
+    st.success(
+        f"Comparing the difference between the Sigmoid and SoftMax "
+        f"activation functions."
+    )
+
+    st.info(
+        f"SoftMax and Sigmoid are both activation functions that are used in "
+        f"an ML model architecture. Typically, SoftMax is used for "
+        f"multi-class classification and Sigmoid is used for binary "
+        f"classification. To see which activation function performs best to "
+        f"solve our problem, both were tested and compared against each "
+        f"other.\n\n"
+        f"To obtain a conclusion about which activation function we should "
+        f"use in our ML model, a learning curve can be plotted to show the "
+        f"accuracy and error rate on the training and validation dataset as "
+        f"the model is being trained.\n\n"
+        f"For the SoftMax function, it can be observed that there is a lot "
+        f"less overfitting as compared to the Sigmoid function."
+    )
+
+    st.warning(
+        f"In this case, it can be observed that the SoftMax function "
+        f"performed better than the Sigmoid function."
+    )
+
+    
+
