@@ -48,10 +48,10 @@ def page_ml_performance_metrics():
 
     col1, col2 = st.beta_columns(2)
     with col1: 
-        model_accuracy = plt.imread(f"")
+        model_accuracy = plt.imread(f"streamlit_images/model_accuracy.png")
         st.image(model_accuracy, caption='Training Accuracy of the Model')
     with col2:
-        model_loss = plt.imread(f"")
+        model_loss = plt.imread(f"streamlit_images/model_loss.png")
         st.image(model_loss, caption='Training Loss of the Model')
 
     st.warning(
