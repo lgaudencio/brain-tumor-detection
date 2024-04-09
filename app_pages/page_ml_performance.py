@@ -95,3 +95,7 @@ def page_ml_performance_metrics():
     )
 
     st.write("---")
+
+    st.write("### Generalised Performance on Test Set")
+    st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
+    
