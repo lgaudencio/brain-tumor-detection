@@ -98,4 +98,8 @@ def page_ml_performance_metrics():
 
     st.write("### Generalised Performance on Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
-    
+
+    st.write(
+        f"For more information, please visit and read the "
+        f"[Project README file](https://github.com/lgaudencio/brain-tumor-detection)"
+    )
