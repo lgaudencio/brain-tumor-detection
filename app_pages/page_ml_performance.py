@@ -63,7 +63,7 @@ def page_ml_performance_metrics():
         f"later epochs we can observe even more overfitting."
     )
 
-    confusion_matrix = plt.imread(f"")
+    confusion_matrix = plt.imread(f"streamlit_images/confusion_matrix.png")
     st.image(
         confusion_matrix, 
         caption='Confusion Matrix'
