@@ -61,5 +61,9 @@ def page_project_hypothesis_body():
         f"performed better than the Sigmoid function."
     )
 
-    
+    softmax_model = plt.imread(f"streamlit_images/softmax_model.png")
+    st.image(softmax_model, caption='SoftMax Loss/Accuracy Performance')
+
+    sigmoid_model = plt.imread(f"streamlit_images/sigmoid_model.png")
+    st.image(sigmoid_model, caption='Sigmoid Loss/Accuracy Performance')
 
