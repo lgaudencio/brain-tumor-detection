@@ -28,7 +28,7 @@ def page_brain_tumor_detector_body():
 
     images_buffer = st.file_uploader(
         'Upload brain MRI scan samples. You may select more than one.',
-        type='png',
+        type=['png', 'jpeg'],
         accept_multiple_files=True
     )
 
