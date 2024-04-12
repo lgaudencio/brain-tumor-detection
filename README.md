@@ -21,3 +21,35 @@ To summarise:
 * The client is interested in having a reliable and functional ML model to predict if an MRI scan of a brain has the absence or presence of a tumour. 
 * The client is interested in having a dashboard at their disposal to obtain a prediction report of the examined MRI brain scans. 
 
+## The rational to map the business requirements to the Data Visualisations and ML tasks
+
+All three business requirements that were set out in a previous section called “Business Requirements”, have been split into several user stories which were translated into Machine Learning Tasks. 
+
+**Business Requirement 1: Data Visualisation**
+
+“The client is interested in conducting a study to visualise the difference in MRI scans between a healthy brain and one with a tumour.”
+
+User Stories: 
+* As a client, I want an interactive dashboard that is easy to navigate so that I can view and understand the data which has been presented. 
+
+* As a client, I want the mean and the standard deviation to be displayed for images that display a healthy scan and a tumour scan, so that I can visually differentiate the MRI scans.
+
+* As a client, I want to display the difference between an MRI scan that is of a healthy brain and an MRI scan of a brain that has the presence of a tumour, so that I can visually differentiate the MRI scans.
+
+* As a client, I want to display an image montage for MRI scans that are healthy and that have the presence of a tumour, so that I can visually differentiate the MRI scans. 
+
+**Business Requirement 2: Classification**
+
+“The client is interested in having a reliable and functional ML model to predict if an MRI scan of a brain has the absence or presence of a tumour.”
+
+User Story: 
+
+* As a client, I want to upload image(s) of the MRI scan results, so that the ML model can give me an immediate and accurate prediction on whether the image is healthy or has a tumour. 
+
+**Business Requirement 3: Reporting**
+
+“The client is interested in having a dashboard at their disposal to obtain a prediction report of the examined MRI brain scans.”
+
+User Story: 
+
+* As a client, I want to obtain a report from the ML predictions on new MRI scans.
