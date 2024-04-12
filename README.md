@@ -37,19 +37,19 @@ Brain scans which contain the presence of a tumour can be visually observed, as 
 
 The mean and standard deviation is needed for the entire dataset to normalise the image. When dealing with an image dataset, the images need to be normalised before training a Neural Network on it. The are two core reasons as to why this is required: 
 
-To help the trained Neural Network give consistent results for the new test images. 
+* To help the trained Neural Network give consistent results for the new test images. 
 
-Helps in transfer learning.
+* Helps in transfer learning.
 
 To calculate the mean and standard deviation of an image dataset, the four dimensions of the image are taken into consideration - B, C, H and W where: 
 
-B is batch size that is number of images 
+* B is batch size that is number of images 
 
-C is the number of channels in the image which will be three for RGB images 
+* C is the number of channels in the image which will be three for RGB images 
 
-H is the height of the image
+* * H is the height of the image
 
-W is the width of the image 
+* W is the width of the image 
 
 The mean and standard deviation will be of one dimension with C values each for a channel. For RGB images, the mean will be a set of three values. Also, the standard deviation will be a set of three values. 
 
