@@ -21,7 +21,7 @@ To summarise:
 * The client is interested in having a reliable and functional ML model to predict if an MRI scan of a brain has the absence or presence of a tumour. 
 * The client is interested in having a dashboard at their disposal to obtain a prediction report of the examined MRI brain scans. 
 
-### Hypothesis and Validation 
+## Hypothesis and Validation 
 
 1. **Hypothesis:** Brain scans which contain the presence of a tumour can be visually observed, as tumours have well-defined margins.
 
