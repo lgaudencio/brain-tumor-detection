@@ -27,7 +27,7 @@ def page_summary_body():
     )
 
     st.success(
-        f"The project has 2 business requirements:\n\n"
+        f"The project has 3 business requirements:\n\n"
         f"1 - The client is interested in conducting a study to visualise the "
         f"difference in MRI scans between a healthy brain and one with a tumour\n\n"
         f"2 - The client is interested in having a reliable and functional ML model "

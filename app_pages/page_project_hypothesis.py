@@ -34,7 +34,7 @@ def page_project_hypothesis_body():
     )
 
 
-    st.write("Hypothesis 2 and Validation")
+    st.write("### Hypothesis 2 and Validation")
 
     st.success(
         f"Comparing the difference between the Sigmoid and SoftMax "
