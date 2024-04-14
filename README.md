@@ -27,6 +27,11 @@ To summarise:
 
     * **How to validate:** Research about brain tumours and build an average image study to help the investigation. 
 
+2. **Hypothesis:** Comparing the difference between the Sigmoid and SoftMax activation functions.
+
+    * **How to validate:** Understand the problem we are trying to solve for our client and how each of these activation functions can help us solve the problem. The same model will be trained and compared by only changing the activation function of the output layer. 
+
+
 **Hypothesis 1**
 
 "Brain scans which contain the presence of a tumour can be visually observed, as tumours have well-defined margins."
@@ -73,7 +78,62 @@ The below image shows the difference between an average healthy MRI scan and a t
 
 As it can be observed from the above images, the model is able to detect differences and to generalise so that it can make accurate predictions. A proficient model can train its capacity to predict class outcomes on a dataset without adhering too closely to that specific set of data. Therefore, the model is able to effectively generalise and predict reliably on any future observations. This can be achieved because the model didn’t just memorise the correlation between features and labels in the training dataset, but by the general patterns from features to labels. 
 
+**Hypothesis 2**
 
+“Comparing the difference between the Sigmoid and SoftMax activation functions.”
+
+**Introduction**
+
+Understanding the problem and the functions: 
+
+To start, we need to understand the problem that we are trying to solve for our client and how the Sigmoid and SoftMax activation functions work. The model has to assign each MRI brain scan it is fed a label of either healthy or tumour, a choice from two categories. It can be seen as one of two ways, firstly, as binary classification, also called logistic regression which categorises new observations into one of two classes (“no tumour” = 0, “tumour” = 1’). Secondly, as multi-class logistic regression which will recorgnise if the MRI scan is healthy or has the presence of a tumour. It must be noted that the must be either “healthy” or “tumour”, and cannot be both, therefore the two classes are mutually exclusive. 
+
+If we view the problem to solve as a binary classification, only one node will be used for the output as probabilities should only relate to only one class. The output from the final layer of the neural network will be transformed into a probability for each class. By using the Sigmoid function, the output can be interpreted as a probability and mark all greater or equal to 0.5 as a classification of 1 (tumour) and all other predictions less than 0.5 as a classification of 0 (healthy). The Sigmoid function is also called the squashing function as its domain is the set of all real numbers, and its range is (0, 1). Therefore, if the input is a very large negative number, a very large positive number or any number between –∞ and +∞, the output will always be between 0 and 1. 
+
+If we view the problem as multi-class, two nodes will be used for the output as we want to predict on two classes (healthy and tumour). For a multi-class classification, the SoftMax function will be used for the output layer. When the SoftMax function is used in the output layer, it is possible to translate the numbers into a probability distribution. Just like the Sigmoid function, it will be in the range (0, 1), but in this case the probabilities will add up to 1. 
+
+Understand and compare the difference between the two functions:
+
+To understand how both the Sigmoid and SoftMax functions perform, learning curves were plotted and we’ll be observing these plots in the next section. Learning curves are widely used as a diagnostic tool in machine learning for algorithms that learn from a training dataset. The model can be evaluated on the training dataset and on a hold out validation dataset after each update during training and plots of the measured performance can be created to show learning curves. By reviewing the learning curves of the model, we can observe if there are any issues, such as an underfit or overfit model. 
+
+For the learning curve plots shown in the observation section below, what we are looking for is a good fit, as this is the goal of the learning algorithm and exists between an overfit and underfit model. A good fit can be identified by a training and validation loss that decreases to a point of stability with a minimal gap between the two final loss values. When observing a learning curve, the loss of the model will almost always be lower on the training dataset than the validation dataset. This implies that there will be some gap between the train and validation loss learning curves. This gap is known as the “generalisation gap”. 
+
+A good fit learning curve plot has the following characteristics: 
+
+* The plot of training loss decreases to a point of stability. 
+
+* The plot of validation loss decreases to a point of stability and has a small gap with the training loss.
+
+**Observation**
+
+To observe the learning curve plots for both Sigmoid and SoftMax, the following was done for both functions to ensure a fair result: 
+
+* Epochs set to the same amount 
+
+* All other hyperparaments were set to the same parameters 
+
+* Early stopping was set
+
+
+The image below shows the Loss/Accuracy Curve using the SoftMax function:
+
+![Loss/Accuracy Curve for SoftMax](readme_images/softmax_loss_acc_curve.png)
+
+The image below shows the model accuracy using the SoftMax function:
+
+![Model Accuracy (%) using SoftMax](readme_images/softmax_model_acc.png)
+
+The image below shows the Loss/Accuracy Curve using the Sigmoid function:
+
+![Loss/Accuracy Curve for Sigmoid](readme_images/sigmoid_loss_acc_curve.png)
+
+The image below shows the model accuracy using the Sigmoid function:
+
+![Model Accuracy (%) using SoftMax](readme_images/sigmoid_model_acc.png)
+
+**Conclusion**
+
+As it can be observed from the above plots and the accuracy percentage, it is clear that the SoftMax function performed best. It had some overfitting on the plot but we can see that we achieved an accuracy of over 82%. 
 
 ## The rational to map the business requirements to the Data Visualisations and ML tasks
 
