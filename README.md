@@ -167,3 +167,19 @@ User Story:
 User Story: 
 
 * As a client, I want to obtain a report from the ML predictions on new MRI scans.
+
+## ML Business Case 
+
+* The client is looking for an ML model that can detect if a brain MRI scan has the presence of a tumour or not. 
+
+* The aim is to provide the stakeholders with a fast and reliable detector for brain tumours. 
+
+* The output from the model will be a classification label which will indicate if the MRI scan is healthy or tumour. 
+
+* Heuristics: At present, all MRI scans are inspected manually. In the UK, patients have to wait an average of 1-2 weeks before getting their MRI scan results. By healthcare professionals using this ML model, we can expect patients to get their diagnosis quicker. 
+
+* Initially, the evaluation of the success of this model will be based on the accuracy percentage displayed once the model has been trained. 
+
+* A more pinpointed level of accuracy will be put forward by the stakeholders, but it should be noted that the dataset that is provided could have limitations. As the accuracy of the model increases, the level of service and care to the patient will also increase. 
+
+* Although an ML accuracy between 70-90% is considered good, in healthcare a level of 97% or greater must be reached. This can ensure that a correct medical diagnosis is achieved. 
