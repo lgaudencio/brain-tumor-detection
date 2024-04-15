@@ -278,3 +278,37 @@ This page will contain all the performance metrics from the ML model, this inclu
 ![Screenshot of ML Performance Metrics Page](readme_images/st_page5.png)
 </details>
 
+## Testing
+
+### Manual Testing
+
+Testing for Business Requirement #1:
+
+*The client is interested in conducting a study to visualise the difference in MRI scans between a healthy brain and one with a tumour.*
+
+| Description                                                                              | Action                                                                                                  | Expected Result                                                                                             | Pass/Fail |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | --------- |
+| Test the navigation bar to ensure it navigates to the correct page                       | Testing was performed by clicking on each of the options one the navigation menu                         | All navigation links get directed to the correct pages                                                      | Pass      |
+| Test that both the mean and standard deviation are displayed for healthy and tumor scans | Testing was performed by navigating to the MRI scan visualiser page and clicking on the first checkbox  | The mean and standard deviation for the healthy and tumor images are displayed once the checkbox is clicked | Pass      |
+| Test that the difference in a healthy MRI scan and a tumor MRI scan can be displayed     | Testing was performed by navigating to the MRI scan visualiser page and clicking on the second checkbox | The images differences in the images from healthy and tumor are displayed once the checkbox is clicked      | Pass      |
+| Test that an image montage is displayed                                                  | Testing was performed by navigating to the MRI scan visualiser page and clicking on the third checkbox  | The image montage is displayed once the the checkbox is clicked                                             | Pass      |
+
+Testing for Business Requirement #2:
+
+*The client is interested in having a reliable and functional ML model to predict if an MRI scan of a brain has the absence or presence of a tumour.*
+
+| Description                              | Action                                                                                                               | Expected Result                                                                                                                                                                                       | Pass/Fail |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| Test that multiple images can be uploaded | Testing was performed by navigating to the Brain Tumor Detection page, dragging and dropping three images to analyse | All images will immediately be analysed with a bar chart each on showing a visual representation of the prediction. An analysis report table will also be displayed with all image names and results. | Pass      |
+
+Testing for Business Requirement #3:
+
+*The client is interested in having a dashboard at their disposal to obtain a prediction report of the examined MRI brain scans.*
+
+| Description                                           | Action                                                                                                                                              | Expected Result                                                                                                 | Pass/Fail |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------- |
+| Test that the analysis report table can be downloaded | Once the images have been been predicted on, below the analysis report table there will be a clickable link which will promt a csv file to download | A csv file will download on the machine and the results will be the same as those stated on the analysis report | Pass      |
+
+### Automated Testing
+
+No automated unit testing was performed, this will be scheduled for the next release. 
