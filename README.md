@@ -183,3 +183,98 @@ User Story:
 * A more pinpointed level of accuracy will be put forward by the stakeholders, but it should be noted that the dataset that is provided could have limitations. As the accuracy of the model increases, the level of service and care to the patient will also increase. 
 
 * Although an ML accuracy between 70-90% is considered good, in healthcare a level of 97% or greater must be reached. This can ensure that a correct medical diagnosis is achieved. 
+
+## Dashboard Design 
+
+This project is presented via Streamlit, which is a dashboard web application. It consists of five pages and the client can navigate throughout these pages by using the menu on the left-hand side. The pages consist of the following: 
+
+**Page 1: Quick Project Summary**
+
+This page will have the following information: 
+
+* General information about brain tumours - what they are and how many types exist. 
+
+* How many brain MRI scan images the dataset contains - both for healthy and tumour. 
+
+* The three business requirements. 
+
+* A link to the full README file for more information. 
+
+<details>
+<summary>Click to View Quick Project Summary Page</summary>
+
+![Screenshot of Quick Project Summary Page](readme_images/st_page1.png)
+</details>
+
+**Page 2: MRI Scan Visualiser**
+
+This page will answer business requirement #1, therefore it will have the following checkboxes so our client can pick what they see on the page: 
+
+* Checkbox #1 - This will show the difference between average and variability image 
+
+* Checkbox #2 - This will show the differences between average tumour and average healthy MRI brains scans 
+
+* Checkbox #3 - This will show an image montage
+
+<details>
+<summary>Click to View MRI Scan Visualiser Page</summary>
+
+![Screenshot of MRI Scan Visualiser Page](readme_images/st_page2.png)
+</details>
+
+**Page 3: Brain Tumor Detection**
+
+This page will answer business requirements 2 and 3, where the client wants to have a reliable and functional ML model to predict if MRI scans of brains are healthy or have the presence of a tumor and to obtain a downloadable report with the results. The following should be conducted to obtain results: 
+
+* Download the dataset with healthy and tumor MRI brain scans from Kaggle here
+
+* As the streamlit application has a user friendly dashboard, the images can be either selected from file by browsing or dragged and dropped. 
+
+* Once images are in, each image will display the bar graph underneath with a visual representation of the prediction and a prediction statement, stating whether the MRI scan shows healthy or tumor. 
+
+* Towards the bottom of the page there will be an analysis report table which will have the name of the images uploaded and the prediction results. 
+
+* Below the analysis report table there will be a link to download the report in a csv format. 
+
+<details>
+<summary>Click to View Brain Tumor Detection Page</summary>
+
+![Screenshot of Brain Tumor Detection Page](readme_images/st_page3.png)
+![Screenshot of Brain Tumor Detection Page Output After Uploading Images](readme_images/st_page3_output.png)
+![Screenshot of Downloaded CSV File from Outputs](readme_images/output_csv.png)
+</details>
+
+**Page 4: Project Hypothesis**
+
+This page will contain: 
+
+* An overview of all the hypotheses and the validation that were previously described in a previous section of this README. 
+
+* A link to the README page so any stakeholder can click and read about the hypothesis and validation more in-depth. 
+
+<details>
+<summary>Click to View Project Hypothesis Page</summary>
+
+![Screenshot of Project Hypothesis Page](readme_images/st_page4.png)
+</details>
+
+**Page 5: ML Performance Metrics**
+
+This page will contain all the performance metrics from the ML model, this includes: 
+
+* Label frequencies for train, validation and test sets. 
+
+* Distribution percentage of MRI scan labels (Healthy & Tumour) across the dataset 
+
+* Model History - Accuracy and Loss of the model 
+
+* Model Accuracy - Confusion matrix 
+
+* Model evaluation result on test set 
+
+<details>
+<summary>Click to View ML Performance Metrics Page</summary>
+
+![Screenshot of ML Performance Metrics Page](readme_images/st_page5.png)
+</details>
+
