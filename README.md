@@ -1,4 +1,6 @@
+![Brain Tumor Detection Banner](readme_images/brain_tumor_detection_banner.png)
 
+Deployed version [here](https://brain-tumor-detection-pp5-844e1e6ea166.herokuapp.com/)
 
 ## Dataset Content
 
