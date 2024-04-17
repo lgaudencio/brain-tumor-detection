@@ -137,6 +137,38 @@ The image below shows the model accuracy using the Sigmoid function:
 
 As it can be observed from the above plots and the accuracy percentage, it is clear that the SoftMax function performed best. It had some overfitting on the plot but we can see that we achieved an accuracy of over 82%. 
 
+## The Rationale for the Model
+
+The model used has the following: Input Layer, Convolutional Layer, Fully Connected Layer and an Output Layer. 
+
+**Overview**
+
+To ensure the model gave an up to standard accuracy, it was a matter of trial and error by setting the hyperparameters, choosing the activation function, loss function and optimiser. 
+
+The chosen model was based on running multiple tests and assessing the outcome of each test to see if it reached the goal of a good accuracy or not. If the accuracy was not up to standard, the model would be tuned before being run again. 
+
+A good model must follow the best practices for machine learning model training as it is an essential process to build accurate and effective models that are able to recognise patterns and make predictions based on the data it is fed. 
+
+**Convolutional Layer Size:** In a Convolutional Neural Network (CNN), a 2-dimensional CNN is used for image classification, therefore, Conv2D was selected as we are using an image dataset. 
+
+**Convolutional Kernel Size:** In the current Deep Learning world, the most popular choice and one used by Deep Learning practitioners, is the 3x3 kernel size. Larger kernel sizes are not used because of extremely long training times and expensiveness. Therefore, by using small kernel sizes, it reduces computational costs and weight sharing that ultimately leads to lesser weights for back-propagation. A 1x1 kernel size was not selected as it is not great with image data as the features extracted will be finely grained and it extracts no information from the neighbouring pixels. A 2x2 kernel was not selected because much like the 1x1 kernel it is also not great with image data because  odd-sized filters symmetrically divide the previous layer pixels around the output pixel, therefore if symmetry is not present it will cause distortion across all the layers. 
+
+**Activation Function:** Rectified Linear Unit (ReLU) was used as it has become the most popular activation function as it overcomes issues that arise from using Sigmoid as the activation function. In the past Sigmoid used to be a popular activation function, but this function would suffer from saturation over time which would then lead to problems occurring with vanishing gradients. 
+
+**Pooling:** Pooling is performed in neural networks to reduce the variance and computation complexity. There are three types of pooling operations: Max Pooling, Min Pooling and Average Pooling. The best pooling method is dependent on what type of data is at hand and in our case the data we have are black and white scan images. When observing MRI scan images of those who have a brain tumour, we can normally see that the tumour shows up on the image as a white circular mass. Therefore, using Max Pooling makes sense as it will select the brighter pixels from the image. 
+
+**Output Layer Activation Function:** For this, two functions were tested (Sigmoid and SoftMax) to see which one would give the best output results. When comparing the output of these two functions the observations were clear that when using SoftMax the model would overfit much less and have a higher accuracy compared to Sigmoid. Further details can be seen in Hypothesis and Validation - Hypothesis 2 section. 
+
+**Dropout:** Dropout is used to prevent the model from overfitting. The fully connected layer occupies most of the parameters, thus neurons develop co-dependently amongst each other during training, which will curb the individual power of each neuron and this leads to overfitting. A dropout rate of 0.5 was used as this is a common rule of thumb for the hidden layers. 
+
+**Output Layer**
+
+**Loss:** The loss function is a crucial component that measures the difference between the predicted outputs of a machine learning algorithm and the actual target values. Sparse Categorical Cross Entropy is used in our output layer as it is compatible with the SoftMax function that is being used, it is commonly used in neural networks for multiclass classification tasks.
+
+**Optimiser:** Optimisers are used to find the optimal set of parameters for a model during the training process, they adjust the weights and biases in the model iteratively until they converge on a minimum loss value. Adam was chosen as the optimiser in the output layer as it combines the best properties of the AdaGrad and RMSProp algorithms to provide an optimisation algorithm that can handle sparse gradients on noisy problems. 
+
+**Metrics:** Accuracy is used in classification problems to calculate the percentage of correct predictions made by a model. The accuracy score is an evaluation metric which measures the number of correct predictions made by the model in relation to the total number of predictions made. To calculate the accuracy, we divide the number of correct predictions by the total number of predictions. 
+
 ## The rational to map the business requirements to the Data Visualisations and ML tasks
 
 All three business requirements that were set out in a previous section called “Business Requirements”, have been split into several user stories which were translated into Machine Learning Tasks. 
