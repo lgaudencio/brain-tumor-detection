@@ -312,3 +312,53 @@ Testing for Business Requirement #3:
 ### Automated Testing
 
 No automated unit testing was performed, this will be scheduled for the next release. 
+
+## Deployment 
+
+Live link to the app: [Brain Tumor Detection](https://brain-tumor-detection-pp5-844e1e6ea166.herokuapp.com/)
+
+### Heroku 
+
+These are the steps needed to successfully deploy the project to Heroku: 
+
+* Set the runtime.txt Python version to a Heroku-20 stack currently supported version. 
+
+* Make sure any recent changes are pushed to GitHub. 
+
+* Log into Heroku and select ‘Create a new app’. 
+
+* Enter a unique app name and select your region, then click ‘Create app’. 
+
+* In the ‘Deploy’ tab, select GitHub in Deployment method, connect to GitHub and search for the project repository. 
+
+* Select the branch you want to deploy and then click ‘Deploy Branch’.
+
+* Wait for the logs to run as the app is being built.
+
+* If the slug size is too large then add large files not required for the app to the slugignore file. 
+
+### Fork Project
+
+Most commonly, forks are used to either propose changes to someone else’s project or to use someone else’s project as a starting point for your own idea. You can fork a project by doing the following:
+
+* Navigate to the GitHub Repository you want to fork
+
+* Not he top right of the page under the header, click the fork button
+
+* This will create a duplicate of the full project in your GitHub Repository
+
+### Clone the Repository Code Locally
+
+To clone the Github repository to use locally, the following will have to be done: 
+
+* Click on the green Code button, which has a drop down menu
+
+* Click on HTTPS
+
+* Copy the repository link that's on the clipboard
+
+* Open an IDE of your choice (note: git must be installed for the next steps)
+
+* Type git clone copied-git-url into the terminal of the IDE
+
+* Once these steps are followed, the project will be cloned on your local machine ready for use.
