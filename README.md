@@ -347,6 +347,16 @@ Testing for Business Requirement #3:
 
 No automated unit testing was performed, this will be scheduled for the next release. 
 
+## Bugs 
+
+.h5 File Size - When calculating the average image size of the dataset, it stated that it was over 400px in both width and height. I planned to reduce the average size so that it wouldn’t cause a limit issue. Unfortunately, I skipped the part where I would have done a simple mathematical calculation to reduce the image size, so when it came time to save the .h5 file, it was not possible due to size limits. Therefore, I had to go back to the code and reduce the size of the dataset images to successfully save the .h5 file. 
+
+Categorical Cross Entropy - When using Categorical Cross Entropy as the loss function in the model architecture, it would give an error as an output. This loss function was first used as it is a loss function that is used for multi-class classification and as the SoftMax function was being used this seemed like the correct loss function to use. By conducting some research, I then decided to use Sparse Categorical Cross Entropy as the loss function and when the model was run there was no error. This is due to the fact that Categorical Cross Entropy are used for labels that are one-hot encoded and Sparse Categorical Cross Entropy is used for labels that are encoded as integers, which is the case (healthy = 0, tumour = 1). 
+
+## Unfixed Bugs 
+
+There are no unfixed bugs
+
 ## Deployment 
 
 Live link to the app: [Brain Tumor Detection](https://brain-tumor-detection-pp5-844e1e6ea166.herokuapp.com/)
