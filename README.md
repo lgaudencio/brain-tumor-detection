@@ -396,3 +396,23 @@ To clone the Github repository to use locally, the following will have to be don
 * Type git clone copied-git-url into the terminal of the IDE
 
 * Once these steps are followed, the project will be cloned on your local machine ready for use.
+
+## Data Analysis & Machine Learning Libraries 
+
+numpy==1.19.2 - Used for processing images via conversion to NumPy arrays
+pandas==1.1.2 - Used to convert numerical data into DataFrames to facilitate functional operations 
+matplotlib==3.3.1 - Used for displaying image data and plotting graphs 
+seaborn==0.11.0 - Used for data visualisation, such as the confusion matrix 
+plotly==4.12.0 - Used for the visualisation of the data, such as the learning curve 
+scikit-learn==0.24.2 - Used for evaluating the model 
+tensorflow-cpu==2.6.0 - Used for creating the model 
+keras==2.6.0 - Used for setting the hyperparameters of the model 
+
+## Other Technologies Used
+
+Streamlit - Used to develop the dashboard for presentation purposes 
+Jupyter Notebook - Used to write and edit the code used for this project 
+Kaggle - Used to source the dataset used in this project 
+Heroku - Used to deploy the dashboard as a web application 
+Git/GitHub - Used for version control and to store the source code 
+Canva - Used to design the logo seen at the top of this README file
