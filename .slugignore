@@ -1,0 +1,4 @@
+inputs/mriscans_dataset/mri-scans/test/healthy/*
+inputs/mriscans_dataset/mri-scans/test/tumor/*
+inputs/mriscans_dataset/mri-scans/train/healthy/*
+inputs/mriscans_dataset/mri-scans/train/tumor/*
