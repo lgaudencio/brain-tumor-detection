@@ -2,3 +2,8 @@ inputs/mriscans_dataset/mri-scans/test/healthy/*
 inputs/mriscans_dataset/mri-scans/test/tumor/*
 inputs/mriscans_dataset/mri-scans/train/healthy/*
 inputs/mriscans_dataset/mri-scans/train/tumor/*
+inputs/mriscans_dataset/mri-scans/validation/healthy/*
+inputs/mriscans_dataset/mri-scans/validation/tumor/*
+README.md 
+assets/readme_images/*
+assets/streamlit_images/*
