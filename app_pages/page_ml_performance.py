@@ -48,10 +48,10 @@ def page_ml_performance_metrics():
 
     col1, col2 = st.beta_columns(2)
     with col1: 
-        model_accuracy = plt.imread(f"streamlit_images/model_accuracy.png")
+        model_accuracy = plt.imread(f"assets/streamlit_images/model_accuracy.png")
         st.image(model_accuracy, caption='Training Accuracy of the Model')
     with col2:
-        model_loss = plt.imread(f"streamlit_images/model_loss.png")
+        model_loss = plt.imread(f"assets/streamlit_images/model_loss.png")
         st.image(model_loss, caption='Training Loss of the Model')
 
     st.warning(
@@ -63,7 +63,7 @@ def page_ml_performance_metrics():
         f"later epochs we can observe even more overfitting."
     )
 
-    confusion_matrix = plt.imread(f"streamlit_images/confusion_matrix.png")
+    confusion_matrix = plt.imread(f"assets/streamlit_images/confusion_matrix.png")
     st.image(
         confusion_matrix, 
         caption='Confusion Matrix'
