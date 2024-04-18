@@ -440,3 +440,11 @@ Kaggle - Used to source the dataset used in this project
 Heroku - Used to deploy the dashboard as a web application 
 Git/GitHub - Used for version control and to store the source code 
 Canva - Used to design the logo seen at the top of this README file
+
+## Issues
+
+**CodeAnywhere:** At first, this project was started using the cloud IDE, CodeAnywhere. I found it very unreliable to be able to keep to my working schedule, taking up to 30 minutes to load the workspace. In addition, when trying to run bits of code it would just end up crashing, having to re-open the workspace and losing more time. I then made the decision to move to GitHub where opening the workspace was much quicker and wouldn’t crash while running the code. 
+
+**GitHub Size Limits:** I ran into GitHubs size limits a couple of times. When trying to extract the data from Kaggle and unzip the dataset I got a warning stating it was over the size limit of 100MB. Therefore, to get around this issue I downloaded the dataset to my computer and removed some files so that it would be under the 100MB limit. Once done, I manually dragged and dropped them into the correct folders in my workspace. Another instance was when saving the .h5 file, this file was also over the 100MB limit. As stated in the Bugs section, the average image size was decreased so it could be below 100MB. 
+
+**Compatibility:** At the start of the project, there were issues with the compatibility of all the libraries that were installed and dependency clashes. To resolve this, I copied the requirement.txt file from the Malaria Detector Walkthrough Project from CI. Once these correct libraries and versions were installed on my workspace, there were no further issues with dependencies. 
