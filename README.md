@@ -448,3 +448,41 @@ Canva - Used to design the logo seen at the top of this README file
 **GitHub Size Limits:** I ran into GitHubs size limits a couple of times. When trying to extract the data from Kaggle and unzip the dataset I got a warning stating it was over the size limit of 100MB. Therefore, to get around this issue I downloaded the dataset to my computer and removed some files so that it would be under the 100MB limit. Once done, I manually dragged and dropped them into the correct folders in my workspace. Another instance was when saving the .h5 file, this file was also over the 100MB limit. As stated in the Bugs section, the average image size was decreased so it could be below 100MB. 
 
 **Compatibility:** At the start of the project, there were issues with the compatibility of all the libraries that were installed and dependency clashes. To resolve this, I copied the requirement.txt file from the Malaria Detector Walkthrough Project from CI. Once these correct libraries and versions were installed on my workspace, there were no further issues with dependencies. 
+
+## Credits 
+
+* Throughout the development of this project, I was following the Code Institute Malaria Detector Walkthrough Project.
+
+* The Kaggle dataset was sourced from [here](https://www.kaggle.com/datasets/preetviradiya/brian-tumor-dataset)
+
+### Content 
+
+* Understanding the Mean and Standard Deviation of an Image Dataset: [Calculate mean and std of Image Dataset](https://iq.opengenus.org/calculate-mean-and-std-of-image-dataset/)
+
+* Understanding the SoftMax Function: [What is the Softmax Function?](https://deepai.org/machine-learning-glossary-and-terms/softmax-layer)
+
+* Understanding the Sigmoid Function: [Sigmoid Function](https://www.learndatasci.com/glossary/sigmoid-function/)
+
+* Understanding the Difference Between the Sigmoid and SoftMax Functions: [The Differences between Sigmoid and Softmax Activation Functions](https://medium.com/arteos-ai/the-differences-between-sigmoid-and-softmax-activation-function-12adee8cf322)
+
+* Understanding Learning Curves: [How to use Learning Curves to Diagnose Machine Learning Model Performance](https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/)
+
+* Understanding ReLU as an Activation Function: [An Introduction to the ReLU Activation Function](https://builtin.com/machine-learning/relu-activation-function)
+
+* Understanding Pooling: [Maxpooling vs minpooling vs average pooling](https://medium.com/@bdhuma/which-pooling-method-is-better-maxpooling-vs-minpooling-vs-average-pooling-95fb03f45a9#:~:text=The%20three%20types%20of%20pooling,in%20the%20batch%20is%20selected)
+
+* Information on Convolutional Layers: [How Do Convolutional Layers Work in Deep Learning Neural Networks?](https://machinelearningmastery.com/convolutional-layers-for-deep-learning-neural-networks/)
+
+* Information on Kernel Sizes: [How to choose the size of the convolution filter or Kernel size for CNN?](https://medium.com/analytics-vidhya/how-to-choose-the-size-of-the-convolution-filter-or-kernel-size-for-cnn-86a55a1e2d15)
+
+* Understanding 1D, 2D and 3D CNN: [Understanding 1D, 2D and 3D Convolution Network](https://www.kaggle.com/code/mersico/understanding-1d-2d-and-3d-convolution-network)
+
+* Information on Dropout: [Dropout in (Deep) Machine learning](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5)
+
+* Information on Adam Optimisation: [Gentle Introduction to the Adam Optimization Algorithm for Deep Learning](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
+
+* Information on Accuracy: [How to Check the Accuracy of Your Machine Learning Model](https://deepchecks.com/how-to-check-the-accuracy-of-your-machine-learning-model/)
+
+* Information on Loss Functions: [Loss Functions in Machine Learning Explained](https://www.datacamp.com/tutorial/loss-function-in-machine-learning)
+
+* Information on Sparse Categorical Cross Entropy: [What You Need to Know about Sparse Categorical Cross Entropy](https://rmoklesur.medium.com/what-you-need-to-know-about-sparse-categorical-cross-entropy-9f07497e3a6f#:~:text=Compatible%20with%20softmax%20activation%3A%20The,networks%20for%20multiclass%20classification%20tasks)
