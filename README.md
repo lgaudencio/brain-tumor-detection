@@ -2,6 +2,28 @@
 
 Deployed version [here](https://brain-tumor-detection-pp5-844e1e6ea166.herokuapp.com/)
 
+## Table of Contents
+
+1. [Dataset Content](#dataset-content)
+2. [Business Requirements](#business-requirements)
+3. [Hypothesis and Validation](#hypothesis-and-validation)
+4. [The Rationale for the Model](#the-rationale-for-the-model)
+5. [Trial & Error](#trial--error)
+6. [The rational to map the business requirements to the Data Visualisations and ML tasks](#the-rational-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+7. [ML Business Case](#ml-business-case)
+8. [Dashboard Design](#dashboard-design)
+9. [Testing](#testing)
+    1. [Manual Testing](#manual-testing)
+    2. [Automated Testing](#automated-testing)
+10. [Bugs](#bugs)
+11. [Unfixed Bugs](#unfixed-bugs)
+12. [Deployment](#deployment)
+13. [Data Analysis & Machine Learning Libraries](#data-analysis--machine-learning-libraries)
+14. [Other Technologies Used](#other-technologies-used)
+15. [Issues](#issues)
+16. [Credits](#credits)
+    1. [Content](#content)
+
 ## Dataset Content
 
 The dataset contains a total of 3713 MRI scan images, in which they all consist of a single brain scan and all have a black background as all images are in black and white. These brain scan images are further broken down into 1923 healthy brain scans and 1789 scans of a brain in which a tumour is present. According to [Brain Tumour Research](https://braintumourresearch.org/blogs/campaigning/stark-facts#:~:text=We%20understand%20the%20power%20of%20statistics&text=Too%20many%20people%20are%20being,diagnosed%20with%20a%20brain%20tumour) in the UK, 16,000 people each year are diagnosed with a brain tumour. The dataset used in this project was sourced from [Kaggle](https://www.kaggle.com/datasets/preetviradiya/brian-tumor-dataset). 
