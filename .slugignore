@@ -4,4 +4,3 @@ inputs/mriscans_dataset/mri-scans/train/healthy/*
 inputs/mriscans_dataset/mri-scans/train/tumor/*
 README.md 
 assets/readme_images/*
-assets/streamlit_images/*
