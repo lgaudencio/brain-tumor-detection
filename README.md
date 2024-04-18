@@ -169,6 +169,20 @@ A good model must follow the best practices for machine learning model training 
 
 **Metrics:** Accuracy is used in classification problems to calculate the percentage of correct predictions made by a model. The accuracy score is an evaluation metric which measures the number of correct predictions made by the model in relation to the total number of predictions made. To calculate the accuracy, we divide the number of correct predictions by the total number of predictions. 
 
+## Trial & Error 
+
+While developing the current model architecture a lot of trial and error was conducted to ensure that the best possible results would be achieved in Version 1 (V1). During this period of trial and error, the outputs that were being focused on were the following: Learning curves, accuracy percentage and confusion matrix. 
+
+To conduct trial and error on the model, the hyperparameters would be changed around to see how that would effect the output results and then measured against all obtained results to come up with the current model. The hyperparameters that were changed around and played with were the following: Activation function, loss function, optimiser and dropout rate. 
+
+A good example of the trial and error that was conducted in this project can be seen in Hypothesis 2. In this version, Sigmoid was used as the activation function and binary cross entropy was used as the loss function. In the findings it was observed that the SoftMax function gave a higher accuracy than Sigmoid and also better results in the learning curves as Sigmoid was overfitting significantly more than SoftMax.
+
+The reason as to why the current model architecture was chosen as V1, was due to the following: 
+
+* Learning curves showed significant improvements from other tests, there is some overfitting but previous tests showed significantly more overfitting. 
+
+* Accuracy was above 80%, in previous tests the accuracy was showing to be in and around the 70% range, therefore with the chosen hyperparameters it showed a significant improvement in accuracy.   
+
 ## The rational to map the business requirements to the Data Visualisations and ML tasks
 
 All three business requirements that were set out in a previous section called “Business Requirements”, have been split into several user stories which were translated into Machine Learning Tasks. 
