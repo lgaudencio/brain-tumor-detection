@@ -1,4 +1,4 @@
-![Brain Tumor Detection Banner](readme_images/brain_tumor_detection_banner.png)
+![Brain Tumor Detection Banner](assets/readme_images/brain_tumor_detection_banner.png)
 
 Deployed version [here](https://brain-tumor-detection-pp5-844e1e6ea166.herokuapp.com/)
 
@@ -66,15 +66,15 @@ Therefore, mean and standard deviation is calculated separately for each channel
 
 The below image montage shows the visual difference between healthy MRI scans and and those with the presence of a tumor. 
 
-![Montage of MRI Scans](readme_images/montage.png)
+![Montage of MRI Scans](assets/readme_images/montage.png)
 
 The below image shows the difference between average and variability of the images from a healthy MRI scans and those with the presence of a tumor. 
 
-![Average and Variability of MRI Scans](readme_images/average_and_variability.png)
+![Average and Variability of MRI Scans](assets/readme_images/average_and_variability.png)
 
 The below image shows the difference between an average healthy MRI scan and a tumor MRI scan
 
-![Average Difference in MRI Scans (Healthy & Tumor)](readme_images/image_difference.png)
+![Average Difference in MRI Scans (Healthy & Tumor)](assets/readme_images/image_difference.png)
 
 **Conclusion**
 
@@ -119,19 +119,19 @@ To observe the learning curve plots for both Sigmoid and SoftMax, the following 
 
 The image below shows the Loss/Accuracy Curve using the SoftMax function:
 
-![Loss/Accuracy Curve for SoftMax](readme_images/softmax_loss_acc_curve.png)
+![Loss/Accuracy Curve for SoftMax](assets/readme_images/softmax_loss_acc_curve.png)
 
 The image below shows the model accuracy using the SoftMax function:
 
-![Model Accuracy (%) using SoftMax](readme_images/softmax_model_acc.png)
+![Model Accuracy (%) using SoftMax](assets/readme_images/softmax_model_acc.png)
 
 The image below shows the Loss/Accuracy Curve using the Sigmoid function:
 
-![Loss/Accuracy Curve for Sigmoid](readme_images/sigmoid_loss_acc_curve.png)
+![Loss/Accuracy Curve for Sigmoid](assets/readme_images/sigmoid_loss_acc_curve.png)
 
 The image below shows the model accuracy using the Sigmoid function:
 
-![Model Accuracy (%) using SoftMax](readme_images/sigmoid_model_acc.png)
+![Model Accuracy (%) using SoftMax](assets/readme_images/sigmoid_model_acc.png)
 
 **Conclusion**
 
@@ -251,7 +251,7 @@ This page will have the following information:
 <details>
 <summary>Click to View Quick Project Summary Page</summary>
 
-![Screenshot of Quick Project Summary Page](readme_images/st_page1.png)
+![Screenshot of Quick Project Summary Page](assets/readme_images/st_page1.png)
 </details>
 
 **Page 2: MRI Scan Visualiser**
@@ -267,7 +267,7 @@ This page will answer business requirement #1, therefore it will have the follow
 <details>
 <summary>Click to View MRI Scan Visualiser Page</summary>
 
-![Screenshot of MRI Scan Visualiser Page](readme_images/st_page2.png)
+![Screenshot of MRI Scan Visualiser Page](assets/readme_images/st_page2.png)
 </details>
 
 **Page 3: Brain Tumor Detection**
@@ -287,9 +287,9 @@ This page will answer business requirements 2 and 3, where the client wants to h
 <details>
 <summary>Click to View Brain Tumor Detection Page</summary>
 
-![Screenshot of Brain Tumor Detection Page](readme_images/st_page3.png)
-![Screenshot of Brain Tumor Detection Page Output After Uploading Images](readme_images/st_page3_output.png)
-![Screenshot of Downloaded CSV File from Outputs](readme_images/output_csv.png)
+![Screenshot of Brain Tumor Detection Page](assets/readme_images/st_page3.png)
+![Screenshot of Brain Tumor Detection Page Output After Uploading Images](assets/readme_images/st_page3_output.png)
+![Screenshot of Downloaded CSV File from Outputs](assets/readme_images/output_csv.png)
 </details>
 
 **Page 4: Project Hypothesis**
@@ -303,7 +303,7 @@ This page will contain:
 <details>
 <summary>Click to View Project Hypothesis Page</summary>
 
-![Screenshot of Project Hypothesis Page](readme_images/st_page4.png)
+![Screenshot of Project Hypothesis Page](assets/readme_images/st_page4.png)
 </details>
 
 **Page 5: ML Performance Metrics**
@@ -323,7 +323,7 @@ This page will contain all the performance metrics from the ML model, this inclu
 <details>
 <summary>Click to View ML Performance Metrics Page</summary>
 
-![Screenshot of ML Performance Metrics Page](readme_images/st_page5.png)
+![Screenshot of ML Performance Metrics Page](assets/readme_images/st_page5.png)
 </details>
 
 ## Testing
