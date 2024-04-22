@@ -39,8 +39,11 @@ def page_mri_scan_visualizer_body():
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.warning(
-            f"We notice this study didn't show patterns where "
-            f"we could intuitively differentiate one from another.")
+            f"We notice that this study shows some general patterns where the "
+            f"difference between a healthy and tumour MRI scan can be "
+            f"intuitively differentiated. It must be noted that this is not "
+            f"always the case."
+            )
         st.image(diff_between_avgs, caption='Difference between average images')
 
     if st.checkbox("Image Montage"): 
