@@ -29,9 +29,9 @@ def page_summary_body():
     st.success(
         f"The project has 3 business requirements:\n\n"
         f"1 - The client is interested in conducting a study to visualise the "
-        f"difference in MRI scans between a healthy brain and one with a tumour\n\n"
+        f"difference in MRI scans between a healthy brain and one with a tumour.\n\n"
         f"2 - The client is interested in having a reliable and functional ML model "
-        f"to predict if an MRI scan of a brain has the absence or presence of a tumour\n\n"
+        f"to predict if an MRI scan of a brain has the absence or presence of a tumour.\n\n"
         f"3 - The client is interested in having a dashboard at their disposal to "
         f"obtain a prediction report of the examined MRI brain scans."
     )
