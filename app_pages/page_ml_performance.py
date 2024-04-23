@@ -70,7 +70,7 @@ def page_ml_performance_metrics():
     )
 
     st.warning(
-        f"**Confusion Matrix**"
+        f"**Confusion Matrix**\n\n"
         f"A confusion matrix summerises the performance of a machine learning "
         f"model on a set of test data. It is a way of displaying the number "
         f"of accurate and inaccurate instances based on the predictions of "
