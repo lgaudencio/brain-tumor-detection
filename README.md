@@ -76,7 +76,7 @@ To calculate the mean and standard deviation of an image dataset, the four dimen
 
 * C is the number of channels in the image which will be three for RGB images 
 
-* * H is the height of the image
+* H is the height of the image
 
 * W is the width of the image 
 
