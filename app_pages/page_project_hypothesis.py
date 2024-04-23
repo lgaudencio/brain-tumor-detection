@@ -21,8 +21,8 @@ def page_project_hypothesis_body():
     )
 
     st.warning(
-        f"As it can be observed from the above images, the model is able "
-        f"to detect differences and to generalise so that it can make "
+        f"As observed from the images found in the visualiser page, the model is "
+        f"able to detect differences and to generalise so that it can make "
         f"accurate predictions. A proficient model can train its capacity to "
         f"predict class outcomes on a dataset without adhering too closely to "
         f"that specific set of data. Therefore, the model is able to "
