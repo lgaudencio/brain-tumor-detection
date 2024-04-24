@@ -15,8 +15,10 @@ def page_brain_tumor_detector_body():
     st.write('### Brain Tumor Detector')
 
     st.info(
-        f"The client is interested in having a reliable and functional ML model "
-        f"to predict if an MRI scan of a brain has the absence or presence of a tumor."
+        f"* The client is interested in having a reliable and functional ML model "
+        f"to predict if an MRI scan of a brain has the absence or presence of a tumor.\n\n"
+        f"* The client is interested in having a dashboard at their disposal "
+        f"to obtain a prediction report of the examined MRI brain scans."
         )
 
     st.write(
