@@ -224,6 +224,20 @@ User Stories:
 
 * As a client, I want to display an image montage for MRI scans that are healthy and that have the presence of a tumour, so that I can visually differentiate the MRI scans. 
 
+To implement the User Stories in this business requirement, the following was done:
+
+* Use the Data Visualisation Jupyter Notebook.
+
+* Have an easy-to-navigate menu on the left-hand side of the Streamlit dashboard.
+
+* On the MRI Scan Visualiser page on Streamlit, there will be checkboxes to observe the following:
+
+    * The mean and standard deviation images for both healthy and tumour MRI scans. 
+
+    * Difference between an average healthy MRI scan and average tumour MRI scan. 
+
+    * Image montage for either healthy or tumour MRI scans. 
+
 **Business Requirement 2: Classification**
 
 “The client is interested in having a reliable and functional ML model to predict if an MRI scan of a brain has the absence or presence of a tumour.”
@@ -232,6 +246,20 @@ User Story:
 
 * As a client, I want to upload image(s) of the MRI scan results, so that the ML model can give me an immediate and accurate prediction on whether the image is healthy or has a tumour. 
 
+To implement the User Stories in this business requirement, the following was done:
+
+* Use the Modelling and Evaluation Jupyter Notebook.
+
+* Build and ML model, the rationale for this model can be found in the appropriate section [here](#the-rationale-for-the-model)
+
+* The Brain Tumor Detection page on the Streamlit dashboard will have a feature where the client can upload MRI scan images and get instant results. Functionalities of this feature include: 
+
+    * Images can be uploaded in either PNG or JPG format. 
+
+    * The possibility of uploading more than one image at once but each image must be smaller than 200MB. 
+
+    * Once the image has been predicted on, it will show a bar chart with the probability of healthy/tumour and a prediction statement that will tell the client if the image(s) are healthy or has a presence of a tumour. 
+
 **Business Requirement 3: Reporting**
 
 “The client is interested in having a dashboard at their disposal to obtain a prediction report of the examined MRI brain scans.”
@@ -239,6 +267,10 @@ User Story:
 User Story: 
 
 * As a client, I want to obtain a report from the ML predictions on new MRI scans.
+
+To implement the User Stories in this business requirement, the following was done:
+
+* Once the image(s) have been predicted on, there will be an option to download the report as a csv file which will have the image name and its prediction. 
 
 ## ML Business Case 
 
