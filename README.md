@@ -100,7 +100,9 @@ The below image shows the difference between an average healthy MRI scan and a t
 
 **Conclusion**
 
-As it can be observed from the above images, the model is able to detect differences and to generalise so that it can make accurate predictions. A proficient model can train its capacity to predict class outcomes on a dataset without adhering too closely to that specific set of data. Therefore, the model is able to effectively generalise and predict reliably on any future observations. This can be achieved because the model didn’t just memorise the correlation between features and labels in the training dataset, but by the general patterns from features to labels. 
+As it can be observed from the above images, the model is able to detect differences and to generalise so that it can make accurate predictions. A proficient model can train its capacity to predict class outcomes on a dataset without adhering too closely to that specific set of data. Therefore, the model should be able to effectively generalise and predict reliably on any future observations. This can be achieved because the model doesn’t just memorise the correlation between features and labels in the training dataset, but by the general patterns from features to labels. 
+
+However, even though the model showed great results in accuracy and in the confusion matrix results there was still some ambiguity in the images that were given to the model, as it struggled to make accurate decisions at times.
 
 **Hypothesis 2**
 
