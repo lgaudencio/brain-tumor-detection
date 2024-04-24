@@ -25,12 +25,16 @@ def page_project_hypothesis_body():
         f"able to detect differences and to generalise so that it can make "
         f"accurate predictions. A proficient model can train its capacity to "
         f"predict class outcomes on a dataset without adhering too closely to "
-        f"that specific set of data. Therefore, the model is able to "
+        f"that specific set of data. Therefore, the model should be able to "
         f"effectively generalise and predict reliably on any future "
-        f"observations. This can be achieved because the model didn't just "
+        f"observations. This can be achieved because the model doesn’t just "
         f"memorise the correlation between features and labels in the "
         f"training dataset, but by the general patterns from features to "
-        f"labels."
+        f"labels.\n\n"
+        f"However, even though the model showed great results in accuracy "
+        f"and in the confusion matrix results there was still some ambiguity "
+        f"in the images that were given to the model, as it struggled to "
+        f"to make accurate decisions at times."
     )
 
 
