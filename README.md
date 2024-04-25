@@ -330,7 +330,7 @@ This page will answer business requirement #1, therefore it will have the follow
 
 This page will answer business requirements 2 and 3, where the client wants to have a reliable and functional ML model to predict if MRI scans of brains are healthy or have the presence of a tumor and to obtain a downloadable report with the results. The following should be conducted to obtain results: 
 
-* Download the dataset with healthy and tumor MRI brain scans from Kaggle here
+* Download the dataset with healthy and tumor MRI brain scans from Kaggle [here](https://www.kaggle.com/datasets/preetviradiya/brian-tumor-dataset)
 
 * As the streamlit application has a user friendly dashboard, the images can be either selected from file by browsing or dragged and dropped. 
 
